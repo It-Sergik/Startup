@@ -7,10 +7,12 @@
 html {
   --white: #ffffff;
   --lightgrey: #f6f1f1;
+  --grey: #555555;
   --red: #c0301c;
   --wrapWidth: 1600px;
   --contWidth: 1140px;
   --font: "Montserrat", sans-serif;
+  --font-text: "Roboto Slab", sans-serif;
 }
 
 body {
@@ -96,6 +98,7 @@ header .container {
   max-width: 1000px;
   margin: 30px auto 55px;
   font-size: 20px;
+  font-family: var(--font-text);
 }
 
 .home-link {
@@ -110,4 +113,37 @@ header .container {
 .home-link:hover {
   color: var(--red);
   background: var(--white);
+}
+
+.services {
+  padding: 100px 0 100px;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--grey);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--grey);
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-25px);
+}
+
+.container-text {
+  font-size: 16px;
+  color: var(--grey);
+  text-align: center;
+  padding-top: 40px;
 }
