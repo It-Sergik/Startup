@@ -53,4 +53,21 @@
     background: var(--white);
     color: var(--red);
   }
+
+  header .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .services-container {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .service-item {
+    width: 100%;
+  }
+
+  .service-item p {
+  }
 }
