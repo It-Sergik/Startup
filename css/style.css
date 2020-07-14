@@ -115,10 +115,6 @@ header .container {
   background: var(--white);
 }
 
-.services {
-  padding: 100px 0 100px;
-}
-
 .section-title {
   text-align: center;
   text-transform: uppercase;
@@ -146,6 +142,10 @@ header .container {
   color: var(--grey);
   text-align: center;
   padding-top: 40px;
+}
+
+.services {
+  padding: 100px 0 100px;
 }
 
 .services-container {
@@ -177,4 +177,9 @@ header .container {
   text-align: center;
   margin: 20px 0 0;
   font-family: var(--font-text);
+}
+
+.about {
+  background: #f8f8f8;
+  padding: 100px 0 100px;
 }
