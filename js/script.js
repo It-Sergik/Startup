@@ -8,8 +8,10 @@ $(function () {
   });
 
   $(".about-slider").slick({
-    arrows: false,
-    dots: true,
+    arrows: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     responsive: [
       {
         breakpoint: 600,

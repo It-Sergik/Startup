@@ -205,34 +205,16 @@ header .container {
 }
 
 .about-slider {
-  width: 50%;
+  width: 100%;
   position: relative;
 }
 
-.slick-dots {
-  position: absolute;
-  width: 100%;
-  bottom: 40px;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.slick-list,
+.slick-track {
+  height: 100%;
 }
 
-.slick-dots button {
-  font-size: 0;
-  border: none;
-  cursor: pointer;
-  width: 12px;
-  height: 12px;
-  background: #bbcfcf;
-  border-radius: 50%;
-  margin: 0 6px;
-  outline: none;
-}
-
-.slick-active button {
-  background: var(--white);
+.slide img {
+  width: 250px;
+  height: 250px;
 }
