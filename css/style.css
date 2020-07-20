@@ -214,7 +214,44 @@ header .container {
   height: 100%;
 }
 
+.slick-track {
+  display: flexbox;
+  align-items: flex-start;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slide {
+  padding: 0 15px;
+}
+
 .slide img {
-  width: 250px;
-  height: 250px;
+  height: 100%;
+  width: 100%;
+}
+
+.about-slider {
+  position: relative;
+}
+
+.about-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -15px 0 0 0;
+  z-index: 2;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.about-slider .slick-arrow.slick-next {
+  right: 0;
+  background: url(../img/right-arrow.png) 0 0 / 100% no-repeat;
 }

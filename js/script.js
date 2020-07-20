@@ -11,7 +11,7 @@ $(function () {
     arrows: true,
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 600,
