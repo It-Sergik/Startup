@@ -206,7 +206,7 @@ header .container {
 
 .about-slider {
   width: 100%;
-  position: relative;
+  position: absolute;
 }
 
 .slick-list,
@@ -224,12 +224,12 @@ header .container {
 }
 
 .slide {
-  padding: 0 15px;
+  margin: 0 15px;
 }
 
 .slide .image img {
-  max-width: 100%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -237,60 +237,53 @@ header .container {
 .slide .image {
   display: block;
   position: relative;
-  width: 100%;
-  height: 80%;
+  height: 100%;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
-.slide .image:before {
+.slide .holder:before {
   position: absolute;
   width: 32px;
   height: 28px;
   top: 40%;
   left: 50%;
   margin: -14px 0 0 -10px;
-  background: element(".social-slider") bottom;
+  background: element(".social-slider") top;
   content: "";
   opacity: 0;
   z-index: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  outline: none;
 }
 
-.slide .image:hover:before {
+.slide .holder:hover:before {
   top: 50%;
   opacity: 1;
 }
 
-.slide .image:hover:before {
-  top: 50%;
-  opacity: 1;
-}
-
-.slide .image:after {
+.slide .holder:after {
   position: absolute;
   width: 100%;
-  height: 80%;
+  height: 100%;
   top: 0;
   background: rgba(0, 0, 0, 0.5);
   content: "";
   opacity: 0;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  outline: none;
 }
 
-.slide .image:hover:after {
+.slide .holder:hover:after {
   opacity: 1;
-}
-
-.about-slider {
-  position: relative;
 }
 
 .about-slider .slick-arrow {
   position: absolute;
-  top: 30%;
+  top: 25%;
   margin: 15px;
   z-index: 2;
   font-size: 0;
@@ -323,13 +316,15 @@ header .container {
   background: url(../img/la.jpg) 0 0 / 100% no-repeat;
 }
 
-.name {
+.slide h4 {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
   font-family: var(--font);
   color: var(--grey);
+  margin-top: 20px;
+  padding: 0px;
 }
 
 .slide {
@@ -340,18 +335,35 @@ header .container {
 
 .slide p {
   font-size: 14px;
+  line-height: 24px;
   color: #808080;
   text-align: center;
-  margin-top: -45px;
   font-family: var(--font-text);
+  margin-top: -50px;
 }
 
 .social-slider {
-  margin-top: -50px;
-  display: flex;
+  position: absolute;
   justify-content: center;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  display: none;
 }
 
+.holder {
+  display: block;
+  position: relative;
+  height: 70%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.holder:hover .social-slider {
+  display: block;
+}
 .social-slider a {
   text-decoration: none;
   width: 30px;
