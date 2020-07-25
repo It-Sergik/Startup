@@ -367,3 +367,56 @@ header .container {
 .twitter:hover {
   background: #db4437;
 }
+
+.works {
+  background: var(--white);
+  padding: 100px 0;
+}
+
+.works nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.works nav a {
+  text-decoration: none;
+  text-transform: none;
+  color: #808080;
+  font-size: 16px;
+  font-family: var(--font-text);
+  font-weight: 400;
+}
+
+.works nav a:hover {
+  color: var(--red);
+}
+
+.works-container {
+  padding: 0.5vw;
+  font-size: 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: row wrap;
+  display: flex;
+}
+
+.works-container .works-image {
+  flex: auto;
+  height: 320px;
+  width: 360px;
+  margin: 0.5vw;
+}
+
+.works-container .works-image a img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.picture-view {
+  display: none;
+}
