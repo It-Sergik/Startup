@@ -243,28 +243,7 @@ header .container {
   outline: none;
 }
 
-.slide .holder:before {
-  position: absolute;
-  width: 32px;
-  height: 28px;
-  top: 40%;
-  left: 50%;
-  margin: -14px 0 0 -10px;
-  background: element(".social-slider") top;
-  content: "";
-  opacity: 0;
-  z-index: 1;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  outline: none;
-}
-
-.slide .holder:hover:before {
-  top: 50%;
-  opacity: 1;
-}
-
-.slide .holder:after {
+.slide .holder .image:after {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -277,7 +256,7 @@ header .container {
   outline: none;
 }
 
-.slide .holder:hover:after {
+.slide .holder .image:hover:after {
   opacity: 1;
 }
 
@@ -344,11 +323,11 @@ header .container {
 
 .social-slider {
   position: absolute;
-  justify-content: center;
+  text-align: center;
   left: 0;
   bottom: 0;
   right: 0;
-  top: 0;
+  top: 75%;
   display: none;
 }
 
@@ -362,8 +341,10 @@ header .container {
 }
 
 .holder:hover .social-slider {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
+
 .social-slider a {
   text-decoration: none;
   width: 30px;
@@ -380,18 +361,9 @@ header .container {
   transform: scale(1.2);
 }
 
-.facebook:hover {
-  background: #db4437;
-}
-
-.google-plus:hover {
-  background: #db4437;
-}
-
-.linkedin:hover {
-  background: #db4437;
-}
-
+.facebook:hover,
+.google-plus:hover,
+.linkedin:hover,
 .twitter:hover {
   background: #db4437;
 }
