@@ -508,3 +508,7 @@ header .container {
 .works-image:hover .picture-view {
   display: flex;
 }
+
+.works-menu {
+  display: none;
+}

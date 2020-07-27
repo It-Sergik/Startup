@@ -1,9 +1,17 @@
 $(function () {
   $(".mini-menu").click(function () {
-    if ($("nav ul").css("display") == "none") {
-      $("nav ul").slideDown();
+    if ($(".home-item ul").css("display") == "none") {
+      $(".home-item ul").slideDown();
     } else {
-      $("nav ul").slideUp();
+      $(".home-item ul").slideUp();
+    }
+  });
+
+  $(".works-menu").click(function () {
+    if ($(".works-item ul").css("display") == "none") {
+      $(".works-item ul").slideDown();
+    } else {
+      $(".works-item ul").slideUp();
     }
   });
 
@@ -14,11 +22,24 @@ $(function () {
     slidesToScroll: 1,
     responsive: [
       {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 600,
         settings: {
-          dots: false,
-          centerMode: true,
-          centerPedding: "50px",
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
