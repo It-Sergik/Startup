@@ -534,7 +534,7 @@ header .container {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  top: 30%;
+  top: 35%;
   left: 0;
   right: 0;
   margin: 0;
@@ -548,4 +548,62 @@ header .container {
   font-size: 30px;
   font-weight: 400;
   color: var(--white);
+}
+
+.blog-container {
+  flex-wrap: wrap;
+}
+
+.blog-item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.blog-img {
+  width: 35%;
+  margin-right: 30px;
+}
+
+.square {
+  width: 76px;
+  height: 76px;
+  border: 2px solid var(--grey);
+  margin-right: 30px;
+}
+
+.square-number,
+.square-text {
+  text-decoration: none;
+  text-transform: none;
+  font-family: var(--font);
+  font-weight: 900;
+  color: var(--grey);
+  text-align: center;
+  font-size: 24px;
+  margin-top: 18px;
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-bottom: 0px;
+}
+
+.square-text {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-bottom: 18px;
+}
+
+.blog-topic {
+  display: flex;
+}
+
+.blog-topic h3 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: var(--font);
+  color: var(--grey);
 }
