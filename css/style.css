@@ -666,3 +666,49 @@ header .container {
   background-color: #dddddd;
   width: var(--contWidth);
 }
+
+.clients {
+  background: #f8f8f8;
+  padding: 100px 0 100px;
+}
+
+.slide-client {
+  width: 100%;
+  position: relative;
+}
+
+.company-logos {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-logo {
+  margin-right: 55px;
+}
+
+.slide-text {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-text .text p {
+  text-decoration: none;
+  text-transform: none;
+  font-family: var(--font-text);
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  width: 765px;
+}
+
+.slide-text .autor p {
+  text-decoration: none;
+  text-transform: none;
+  font-family: var(--font-text);
+  font-style: 20px;
+  font-weight: 400;
+}
